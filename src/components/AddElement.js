@@ -11,7 +11,7 @@ export const AddElement = ({ setArr }) => {
     e.preventDefault();
 
     if (inputValue.trim().length > 2) {
-      setArr((prevState) => [...prevState, inputValue]);
+      setArr((prevState) => [inputValue, ...prevState]);
       setInputValue("");
     }
   };

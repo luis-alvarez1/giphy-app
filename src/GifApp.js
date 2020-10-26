@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { AddElement } from "./components/AddElement";
+import { GifGrid } from "./components/GifGrid";
 
 export const GifApp = () => {
-  const [arr, setArr] = useState(["JS", "Java", "C#", "Python"]);
-
-  // const handleAdd = (event) => {
-  //   setArr([...arr, { key: arr.length.toString(), name: "PHP" }]);
-  //   // console.log(event);
-  // };
+  const [arr, setArr] = useState(["JS"]);
 
   return (
     <div>
@@ -16,8 +12,8 @@ export const GifApp = () => {
       <hr />
 
       <ol>
-        {arr.map((language, i) => (
-          <li key={i}>{language}</li>
+        {arr.map((category, i) => (
+          <GifGrid key={i} category={category} />
         ))}
       </ol>
     </div>
