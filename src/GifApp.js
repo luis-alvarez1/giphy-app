@@ -3,7 +3,7 @@ import { AddElement } from "./components/AddElement";
 import { GifGrid } from "./components/GifGrid";
 
 export const GifApp = () => {
-  const [arr, setArr] = useState(["JS"]);
+  const [arr, setArr] = useState(["Example"]);
 
   return (
     <div>
